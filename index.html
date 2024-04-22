@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>   
+<body>
+  <div class="header">
+    <div>
+      <img src="logo.png" alt="Logo" class="logo">
+    </div>
+    <input type="text" placeholder="Search Products..." class="search-bar">
+<i class="fas fa-solid fa-magnifying-glass"></i>
+
+    <div>
+      <img src="login.png" alt="Login" class="login-logo">
+      <img src="cart.png" alt="Cart" class="cart-logo">
+    </div>
+  </div>
+ 
+    <div class="menu-bar">
+      <ul>
+        <li><a href="#">Winter Collection <i class="fas fa-caret-down"></i></a>
+          
+      <div class="dropdown-menu">
+        <ul>
+          <li><a href="#">Hoodies</a></li>
+          <li><a href="#">Denim Jacket</a></li>
+          <li><a href="#">Polo sweater</a></li>
+          <li><a href="#">Polo sweater new</a></li>   
+        </ul>
+      </div>
+        </li>
+        <li><a href="#">Jeans <i class="fas fa-caret-down"></i></a>
+          
+          <div class="dropdown-menu">
+            <ul>
+              <li><a href="#">Diesel</a></li>
+              <li><a href="#">Hugo Boss</a></li>
+              <li><a href="#">American Eagle New</a></li>  
+            </ul>
+          </div>
+            </li>
+            <li><a href="#">Gabardine <i class="fas fa-caret-down"></i></a>
+          
+              <div class="dropdown-menu">
+                <ul>
+                  <li><a href="#">G-star Raw</a></li>
+                  <li><a href="#">Tommy-Hillfiger</a></li>
+                  <li><a href="#">American Eagle Twill</a></li>
+  
+                </ul>
+              </div>
+                </li>
+                <li><a href="#">Shirts <i class="fas fa-caret-down"></i></a>
+          
+                  <div class="dropdown-menu">
+                    <ul>
+                      <li><a href="#">Burberry</a></li>
+                      <li><a href="#">Burberry New</a></li>
+                      <li><a href="#">Men's Polo T-shirt</a></li>
+                      <li><a href="#">Calvin Klein Polo</a></li>   
+                      <li><a href="#">Tommy Hillfiger Polo</a></li>  
+                    </ul>
+                  </div>
+                    </li>
+                    <li><a href="#">Eid Collection <i class="fas fa-caret-down"></i></a>
+          
+                      <div class="dropdown-menu">
+                        <ul>
+                          <li><a href="#">Jack & Jones</a></li>
+                          <li><a href="#">Rookies Jeans New</a></li>
+                          <li><a href="#">Hugo Boss New</a></li>
+                          
+                        </ul>
+                      </div>
+                        </li>
+                        <li><a href="#">Panjabi <i class="fas fa-caret-down"></i></a>
+          
+                          <div class="dropdown-menu">
+                            <ul>
+                              <li><a href="#">Premium Panjabi</a></li>
+                              <li><a href="#">Panjabi</a></li>
+                              
+                            </ul>
+                          </div>
+                            </li>
+                            <li><a href="#">New Arrivals</a></li>
+                            <li><a href="#">Offers</a></li>
+      
+      </ul>
+    </div>
+
+    <section class="slider">
+
+          
+<div class="slideshow-container">
+  <img class="mySlides active" src="image1.jpg" alt="Slide 1">
+  <img class="mySlides" src="image2.jpg" alt="Slide 2">
+  <img class="mySlides" src="image3.jpg" alt="Slide 3">
+</div>
+
+    </section>
+
+
+
+  </body>
+
+   <script>
+      var slideIndex = 0;
+  carousel();
+
+  function carousel() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}
+    slides[slideIndex-1].style.display = "block";
+    setTimeout(carousel, 2000); // Change image every 2 seconds
+  }
+   </script>
+
+</html>
